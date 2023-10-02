@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1 {
+	padding-left: 150px;
+	background-color: lightgrey;
+	line-height: 100px;
+}
+ul {
+	padding-top: 40px;
+	padding-left: 40px;
+	list-style: none;
+	font-size: 25px;
+}
+li {
+	padding-bottom: 25px;
+}
