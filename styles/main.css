@@ -3,10 +3,20 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+ body {
+ 	width: 1000px;
+ 	margin: 0 auto;
+ 	border: 1px solid black;
+ }
+
 h1 {
 	padding-left: 150px;
 	background-color: lightgrey;
 	line-height: 100px;
+}
+
+div {
+	background-color: lightyellow;
 }
 ul {
 	padding-top: 40px;
@@ -16,4 +26,18 @@ ul {
 }
 li {
 	padding-bottom: 25px;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	border: 2px solid black;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+a:hover {
+	background-color: grey;
+	color: white;
 }

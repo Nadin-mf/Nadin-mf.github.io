@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+body {
+	width: 1000px;
+	margin: 0auto;
+}
 header {
 	padding: 25px;
 	text-align: center;
