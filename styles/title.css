@@ -11,11 +11,11 @@ a {
 }
 
 div {
-	margin-top: 100px;
+/*	margin-top: 100px;*/
 	font-size: 40px;
 }
 
-div:before {
+.title:before {
   content: "";
   width: 300px;
   height: 5px;
@@ -26,7 +26,7 @@ div:before {
   border-radius: 10px;
   
 }
-div:after {
+.title:after {
   content: "";
   width: 300px;
   height: 5px;
@@ -36,4 +36,35 @@ div:after {
   margin-right: 40px;
   border-radius: 10px;
   
+}
+
+.circle {
+  margin: 200px;
+  height: 120px;
+  width: 120px;
+  background: blue;
+  border-radius: 50%;
+  box-shadow: 0 0 0 30px white, 
+              0 0 0 60px red;
+}
+
+
+
+.b-circle {
+  width: 120px;
+  height: 120px;
+  background-color: red;
+  margin: 200px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.b-circle-line {
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  right: -60px;
+  bottom: -60px;
+  border: 30px solid blue;
+  border-radius: 50%;
 }
