@@ -1,0 +1,141 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	background: linear-gradient(135deg, #2a2123 0%,#4e3a32 100%);
+}
+
+.home {
+	display: inline-block;
+	color: #FCC919;
+	padding-top: 20px;
+	padding-left: 160px;
+}
+.page-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	width: 940px;
+	margin: 30px auto;
+	position: relative;
+}
+
+.l-side {
+	background-image: url(https://st4.depositphotos.com/1020618/28685/i/450/depositphotos_286856478-stock-photo-tasty-burger-on-wooden-table.jpg);
+	width: 330px;
+	height: 400px;
+	background-size: cover;
+}
+
+.banner {
+	width: 335px;
+	height: 210px;
+	background-color: black;
+	position: relative;
+	left: -9px;
+	top: 150px;
+	padding: 40px;
+}
+
+.banner div:first-child {
+	color: white;
+	font-size: 44px;
+	line-height: 35px;
+	font-weight: bold;
+	text-align: center;
+
+}
+
+.banner div:last-child {
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 15px;
+	font-family: verdana;
+
+}
+.colortext {
+	color: #FCC919;
+}
+.r-side {
+	width: 610px;
+	height: 400px;
+	background-color: white;
+	
+}
+
+h1 {
+	font-weight: 400;
+	font-size: 24px;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 20px;
+}
+
+.info {
+	display: flex;
+	justify-content: space-around;
+}
+
+.name {
+	display: inline-block;
+	width: 200px;
+	text-align: center;
+	font-size: 21px;
+	padding-bottom: 4px;
+	padding-top: 15px;	
+}
+
+.price-conteiner {
+	font-family: verdana;
+	display: flex;
+	justify-content: space-around;
+}
+
+.price {
+	display: flex;
+	flex-flow: column;
+	font-size: 18px;
+	color: grey;
+	width: 200px;
+	text-align: center;	
+	border-bottom: 1px solid grey;
+	padding-bottom: 15px;
+
+}
+
+.price:after {
+	content: "";
+	display: inline-block;
+  	width: 10px;
+  	height: 10px;
+ 	background-color: grey;
+  	transform: rotate(45deg);
+ 	position: relative;
+ 	 left: 45%;
+ 	 top: 21px;
+}
+
+.button {
+	width: 175px;
+	height: 55px;
+	color: white;
+	font-family: verdana;
+	font-weight: bold;
+	background-color: black;
+	position: absolute;
+	right: 0px;
+	top: 410px;
+	text-align: center;
+	line-height: 55px;
+
+}
+
+.button:hover {
+	background-color: #FCC919;
+	color: black;
+}
