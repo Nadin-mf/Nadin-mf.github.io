@@ -76,39 +76,32 @@ h1 {
 	padding-bottom: 20px;
 }
 
-.info {
-	display: flex;
-	justify-content: space-around;
+.menu-container {
+  width: 610px;
+  display: flex;
+	flex-wrap: wrap;
+  justify-content: space-around;
 }
-
 .name {
-	display: inline-block;
-	width: 200px;
-	text-align: center;
-	font-size: 21px;
-	padding-bottom: 4px;
-	padding-top: 15px;	
+  font-size: 21px;
 }
-
-.price-conteiner {
-	font-family: verdana;
-	display: flex;
-	justify-content: space-around;
-}
-
 .price {
-	display: flex;
-	flex-flow: column;
-	font-size: 18px;
-	color: grey;
-	width: 200px;
-	text-align: center;	
-	border-bottom: 1px solid grey;
-	padding-bottom: 15px;
-
+  font-size: 18px;
+  font-family: verdana;
+  color: grey;
+  padding-top: 5px;
+}
+.info {
+  display: flex;
+  flex-flow: column;
+  width: 200px;
+  text-align: center;	
+  border-bottom: 1px solid grey;
+  padding: 15px 0px;
+  margin: 0px 15px;
 }
 
-.price:after {
+.info:after {
 	content: "";
 	display: inline-block;
   	width: 10px;
@@ -119,6 +112,8 @@ h1 {
  	 left: 45%;
  	 top: 21px;
 }
+
+
 
 .button {
 	width: 175px;
@@ -132,10 +127,43 @@ h1 {
 	top: 410px;
 	text-align: center;
 	line-height: 55px;
+	cursor: pointer;
 
 }
 
 .button:hover {
 	background-color: #FCC919;
 	color: black;
+}
+
+@media screen and (max-width: 320px) {
+	.home {
+	display: none;
+	}
+	.page-wrapper {
+	margin: 0;
+	position: static;
+	width: 320px;
+	}
+	.l-side {
+	width: 320px;
+	height: 550px;
+	}
+	.banner {
+	width: 320px;
+	left: 0;
+	}
+	.r-side, .menu-container {
+		width: 320px;
+		background-color: white;
+		padding-bottom: 100px;
+/*		min-height: 550px;*/
+	}
+	.button {
+		position: fixed;
+		margin-right: 10px;
+		top: 450px;
+		width: 235px;
+	}
+	
 }
