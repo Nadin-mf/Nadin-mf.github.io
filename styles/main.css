@@ -32,8 +32,8 @@ a {
 	display: inline-block;
 	text-decoration: none;
 	color: black;
-	border: 2px solid black;
-	padding: 15px;
+	border: 1px solid #ccc;
+	padding: 5px;
 	border-radius: 10px;
 }
 

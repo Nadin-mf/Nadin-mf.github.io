@@ -1,0 +1,286 @@
+.hero-section {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(90deg, rgba(213, 32, 71, 0.80) 0%, rgba(238, 61, 27, 0.80) 100%), 
+				url(../images/hero_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: var(--color-white);
+}
+
+nav {
+	height: 60px;
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	align-items: center;
+}
+
+.logo-title {
+	margin-left: 7px;
+	font-size: .9rem;
+}
+
+.menu-wrap {
+	order: 2;
+	position: relative;
+}
+
+.menu {
+	width: calc(100vw - 40px);
+	height: auto;
+	position: absolute;
+	right: 0;
+	top: 40px;
+	padding: 0 10px;
+	list-style: none;
+	text-align: center;
+	transition: all 1s ease;
+	background-color: rgba(182, 36, 50, .9);
+	border-radius: 5px;
+}
+
+.menu li {
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	padding: 3px;
+
+}
+.menu li:first-child {
+	margin-top: 10px;
+}
+
+.menu li:not(:last-child):hover {
+	border: 1px solid var(--color-white);
+	border-radius: 5px;
+}
+
+.menu .lang-navbar {
+	justify-content: center;
+}
+
+.menu a {
+	display: block;
+	color: var(--color-white);
+	text-decoration: none;
+	font-size: 1.125rem;
+}
+
+.btn__transparent {
+	width: 80px;
+	height: 40px;
+	border: 1px solid var(--color-white);
+	text-align: center;
+	line-height: 37px;
+}
+.btn a {
+	text-decoration: none;
+	color: var(--link-color);
+}
+
+.burger-icons {
+	margin-left: 20px;
+}
+.lang-navbar {
+	align-items: center;
+	cursor: pointer;
+	position: relative;
+}
+
+.lang-navbar-flag {
+	width: 32px;
+	height: 32px;
+	background-image: url(../images/icons/flag.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.lang-navbar-title {
+	margin: 0 11px;
+}
+
+.lang-select {
+	display: block;
+	position: absolute;
+	top: 50px;
+	visibility: hidden;
+}
+.lang-select li {
+	padding: 5px 15px;
+	list-style: none;
+	line-height: 30px
+
+
+}
+.lang-select li:hover {
+	border: 1px solid var(--color-white);
+
+}
+.lang-open .lang-select {
+	visibility: visible;
+}
+.lang-select .ua-icon:before {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-image: url(../images/icons/ua_icon.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	margin-right: 5px;
+
+}	
+.lang-select .pl-icon:before {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-image: url(../images/icons/flag_poland.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	margin-right: 5px;
+
+}
+
+.lang-select .fr-icon:before {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-image: url(../images/icons/flag_france.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	margin-right: 5px;
+
+} 
+
+/*-------- HEADER CONTENT --------*/
+
+
+.header-content {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: calc(100vh - 60px);
+	text-align: center;
+}
+.header-title {
+	margin-top: -60px;
+	font-size: 2rem;
+	letter-spacing: 1.8px;
+}
+.header-description {
+	margin: 20px 0;
+	line-height: 150%;
+}
+
+.btn__fill {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 160px;
+	height: 50px;
+}
+
+.btn__fill-white {
+	background-color: var(--color-white);
+	color: var(--color-red);
+}
+
+
+/*------- Media queries ----------*/
+
+
+@media (min-width:768px) {
+	.logo-title {
+		font-size: 1.125rem;
+	}
+	.menu-wrap {
+		order: 0;
+	}
+	.btn__transparent {
+		width: 100px;
+		margin-left: 20px;
+	}
+	.burger-icons {
+		display: none;
+	}
+	.menu {
+		position: static;
+		width: auto;
+		background: none;
+	}
+	.menu.menu-close {
+		height: auto;
+	}
+	.menu {
+		display: flex;
+	}
+	.menu li {
+		margin-bottom: 0;
+	}
+	.menu li:first-child {
+	margin-top: 0;
+}
+	.menu a {
+		font-size: .875rem;
+	}
+	.nav-control.pull-r {
+		margin-left: 0;
+	}
+	nav.d-flex {
+		justify-content: space-between;
+	}
+	.header-description {
+		font-size: 1.5rem;
+		max-width: 540px;
+		padding: 0 35px;
+	}
+}
+
+@media (min-width:860px) {
+	.menu a {
+		padding: 0 10px;
+	}
+}
+
+@media (min-width:1100px) {
+
+	.logo-title {
+		font-size: 1.125rem;
+	}
+	.menu li a {
+		font-size: 1.1rem;
+	}
+	.lang-navbar-flag {
+		width: 40px;
+		height: 40px;
+	}
+	.lang-navbar-title{ 
+	font-size: 1.1rem;
+	 }
+	.lang-select li {
+	font-size: 1.1rem;	
+	}
+	
+	.nav-control .btn__transparent {
+		width: 100px;
+		height: 50px;
+		font-size: 1.1rem;
+		line-height: 47px;
+	}
+	.header-title {
+		font-size: 3rem;
+	}
+	.content-wrap .btn__fill-white {
+		font-size: 1.1rem;
+	}
+}
