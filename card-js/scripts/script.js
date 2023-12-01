@@ -4,26 +4,71 @@
 let products = [
 	{
 		category: "Математика",
-		imgURL: '../images/math.png',
+		urlCat: '#',
+		imgURL: './images/math.png',
 		productName: 'Котосови',
-		price: 190,
-		button: 'У корзину'
-		// count: 0
+		urlName: '#',
+		price: '',
+		button: 'У корзину',
+		count: 0
 	},
 	{
-		category: "Усний рахунок",
-		imgURL: '../images/turbo.png',
-		productName: 'Турборахунок',
-		price: 320,
-		button: 'У корзину'
-		// count: 20
+		category: "Подарунок",
+		urlCat: '#',
+		imgURL: './images/g1.png',
+		productName: 'Набір розумника',
+		urlName: '#',
+		price: '190грн',
+		button: 'У корзину',
+		count: 20
 		},
+	{
+		category: "Усний рахунок",
+		urlCat: '#',
+		imgURL: './images/turbo.png',
+		productName: 'Турборахунок',
+		urlName: '#',
+		price: '320грн',
+		button: 'У корзину',
+		count: 10
+	},
+	{
+		category: "Букви та читання",
+		urlCat: '#',
+		imgURL: './images/zb.png',
+		productName: 'Тваринобукви',
+		urlName: '#',
+		price: '450грн',
+		button: 'У корзину',
+		count: 5
+	},
 ]
-console.log(products)
 
-for (let i = 0; i < products.lenght; i++) {
+// console.log(products)
+
+const wrapElement = document.createElement('div')
+wrapElement.className = 'page-wrapper'
+document.body.prepend(wrapElement)
+
+const hElement = document.createElement('h1')
+hElement.className = 'h'
+hElement.textContent = 'Обовязково додайте своє замовлення' 
+document.body.prepend(hElement)
+
+const arrowLeft = document.createElement('div')
+arrowLeft.className = 'arrow-left'
+arrowLeft.textContent = '<'
+wrapElement.append(arrowLeft)
+
+const arrowRight = document.createElement('div')
+arrowRight.className = 'arrow-right'
+arrowRight.textContent = '>'
+wrapElement.append(arrowRight)
+
+for (let i = 0; i < products.length; i++) {
 	
   createCard(products[i])
+  // createLink(products[i])
 }
 
 
@@ -32,104 +77,116 @@ function createCard(element) {
 	
 	const container = document.createElement('div')
 	container.className = 'container'
-
+	if(element.price<=0){
+		const spriteNew = document.createElement('div')
+	spriteNew.className = 'sprite-new'
+	spriteNew.textContent = 'Новинка'
+	container.append(spriteNew)
+	  // element.price>=200
+    // const spriteHit = document.createElement('div')
+		// spriteHit.className = 'sprite-hit-1'
+		// spriteHit.textContent = 'Хіт продажів'
+		// container.append(spriteHit) 
+	}
+  else{
+  	// element.price>=200
+    const spriteHit = document.createElement('div')
+		spriteHit.className = 'sprite-hit-1'
+		spriteHit.textContent = 'Хіт продажів'
+		container.append(spriteHit) 
+	}
+	// if(element.price<=200){
+	// 	spriteHit.style.display = "none"
+	// }
+ 
 	const sectionLink = document.createElement('a')
 	sectionLink.className = 'section'
+	sectionLink.href = element.urlCat
 	sectionLink.textContent = element.category
+
 
 	const img = document.createElement('img')
 	img.src = element.imgURL
 
 	const titleLink = document.createElement('a')
 	titleLink.className = 'title'
+	titleLink.href = element.urlName
 	titleLink.textContent = element.productName
 
 	const price = document.createElement('div')
+	if(element.price<=200){
+		const wrongPrice = document.createElement('small')
+	wrongPrice.className = 'wrong-price'
+	wrongPrice.textContent = '210грн'
+	price.append(wrongPrice)
+	}
 	price.className = 'price'
 	price.textContent = element.price
 
 
 	const basket = document.createElement('div')
-	// if(element.count>0){
-	// 	basket.className = 'basket'
-	// 	basket.textContent = element.button
-	// }
-  // else{
-  //   basket.className = "soon"
-  //   basket.textContent = 'Незабаром у продажі'
-  // }
-	basket.className = 'basket'
-	basket.textContent = element.button
+	if(element.count>0){
+		basket.className = 'basket'
+		basket.textContent = element.button
+	}
+  	else{
+    basket.className = "soon"
+    basket.textContent = 'Незабаром у продажі'
+  }
+	
 
 	container.prepend(sectionLink, img, titleLink, price, basket)
 	document.querySelector('.page-wrapper').append(container)
 }
-console.log(createCard)
+// console.log(createCard)
 
 
 
+// ------------------
+ // document.querySelector('.page-wrapper').append(container)
+  // createCard.append(createLink)
 
 
+// document.querySelector('.page-wrapper').append(createCard, createLink)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let menuArray = [
-// { 
-//   url: 'index.html',
-//   title: 'Main'
-// },
-// { 
-//   url: 'about.html',
-//   title: 'About'
-// },
-// { 
-//   url: 'portfolio.html',
-//   title: 'Portfolio'
-// },
-// { 
-//   url: 'contact.html',
-//   title: 'Contact'
+// function createLink(item) {
+// 	const sectionLink = document.createElement('a')
+// 	sectionLink.className = 'section'
+// 	sectionLink.href = item.urlCat
+// 	sectionLink.textContent = item.category
+// 	// createCard.append(sectionLink)
 // }
-// ]
+// console.log(createLink)
+// ----------------------?
 
 
 
-// const navElement = document.createElement('nav')
-// const ulElement = document.createElement('ul')
-// ulElement.className = 'main-menu'  
 
 
-//  for (let i = 0; i < menuArray.length; i++) {
 
-//     const liElement = document.createElement('li')
-// 	liElement.className = 'menu-item'
 
-// 	const aElement = document.createElement('a')
-// 	aElement.href = menuArray[i].url
-// 	aElement.textContent = menuArray[i].title
-//  liElement.append(aElement)
-//  ulElement.append(liElement)
 
-//  }
-//  navElement.append(ulElement)
 
-//  document.body.prepend(navElement)
 
-// 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
