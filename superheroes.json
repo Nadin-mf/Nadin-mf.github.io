@@ -1,7 +1,7 @@
 {
   "squadName" : "Super Hero Squad",
-  "homeTown" : "Metro City",
-  "formed" : 2022,
+  "homeTown" : "Iv-Fr City",
+  "formed" : 2024,
   "secretBase" : "Super tower",
   "active" : true,
   "members" : [
@@ -11,6 +11,7 @@
       "secretIdentity" : "Dan Jukes",
       "powers" : [
         "Radiation resistance",
+        "Radiation resistance22",
         "Turning tiny",
         "Radiation blast"
       ]
