@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang='uk'>
+	<head>	
+		<meta charset="UTF-8">
+		<title>Base HTML</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+		<link
+  		rel="stylesheet"
+  		href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="styles/app.css">
+	</head>
+	<body>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+		<header class="hero-section">
+			<div class="content-wrap">
+				
+				<nav class="nav d-flex">
+					<div class="logo-img">
+						<a href="#"><img src="images/logo.svg"></a> 
+					</div>
+					<div class="nav-bar d-flex">
+						<ul id="menuList" class="main-menu menu-close desktop">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Pages</a></li>
+							<li><a href="#">Services</a></li>
+						</ul>
+						<div class="cart d-flex">
+							<a href="">Cart</a>
+							<div class="cart-items">0</div>
+						</div>
+					
+		<!-- --------------------				 -->
+
+						<a href="#" class="btn__transparent btn-blue" id="form-open">Get started</a>
+						<div class="form-window" id="formWindow">
+							<div class="form-container d-flex">
+								<div class="form-block">
+									<p class="title-form">Sign in</p>
+									<form>
+										
+										<input type="email" placeholder="E-mail">
+										<input type="Password" placeholder="Password">
+										<button>Login</button>
+									</form>
+									<div class="form-close" id="closeForm"><i class="fa-solid fa-xmark"></i></div>
+								</div>
+							</div>
+						</div>
+
+		<!-- --------------------- -->
+
+
+						<div id='burgerIcons' class="burger-icons">
+						<i id='iconBars' class="fa-solid fa-bars"></i>
+						<i id='iconXmark' class="fa-solid fa-xmark hide"></i>
+						</div>
+						
+					</div>
+				</nav>
+				
+				
+				<div class="header-content d-flex">
+					<div class="header-content-text">
+					<div class="header-title title">Marketing solutions that grow your business.
+					</div>
+						<div class="header-text text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.
+						</div>
+						<div class="buttons d-flex">
+							<a href="#" class="header-btn btn-blue">Our services</a>
+							<a href="#" class="btn-grey">Contact us</a> 
+						</div>
+					</div>
+					<div class="header-photo">
+						<img src="images/photo/header-photo.png" alt="">
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+		<div class="partners">
+			<div class="content-wrap">
+				<p class="partners-text">
+					TRUSTED BY startups and large enterprises
+				</p>
+				<div class="logo-partners d-flex">
+					<a href="#"><img src="images/partners/luminous.svg"></a> 
+					<a href="#"><img src="images/partners/sitemark.svg"></a>
+					<a href="#"><img src="images/partners/pronature.svg"></a>
+					<a href="#"><img src="images/partners/greenish.svg"></a>
+					<a href="#"><img src="images/partners/waveless.svg"></a>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="services-section">
+			<div class="content-wrap">
+				<div class="services-descr">
+					<div class="tag">services</div>
+					<div class="services-title title">Services we offer</div>
+					<p class="services-text text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.</p>
+					<a href="#" class="btn_services btn-blue">All services</a>
+				</div>
+				<div class="services-container d-flex">
+					<div class="services-container-left d-flex">
+					<div class="icon-container social">
+						<div class="services-img">
+						<img src="images/icon/social.svg">
+						</div>
+						<a href="#"><p class="services-icon-title">Social Media Marketing</p></a> 
+						<p class="services-icon-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna adipiscing praesent velit.</p>
+					</div>
+					<div class="icon-container email">
+						<div class="services-img">
+						<img src="images/icon/email.svg">
+						</div>
+						<a href="#"><p class="services-icon-title">Email Marketing</p></a> 
+						<p class="services-icon-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna adipiscing praesent velit.</p>
+					</div>
+					</div>
+					<div class="services-container-right d-flex">
+					<div class="icon-container paid">
+						<div class="services-img">
+						<img src="images/icon/paid.svg">
+						</div>
+						<a href="#"><p class="services-icon-title">Paid Advertising</p></a> 
+						<p class="services-icon-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna adipiscing praesent velit.</p>
+					</div>
+					<div class="icon-container seo">
+						<div class="services-img">
+						<img src="images/icon/seo.svg">
+						</div>
+						<a href="#"><p class="services-icon-title">SEO Optimization</p></a> 
+						<p class="services-icon-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna adipiscing praesent velit.</p>
+					</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="marketing-info">
+			<div class="content-wrap d-flex">
+				<div class="marketing-photo d-flex">
+					<div class="photo-big img"><img src="images/photo/photo-1.png" alt="#"></div>
+					<div class="photo-small img"><img src="images/photo/photo-2.png" alt="#"> </div>
+				</div>
+				<div class="marketing-descr">
+					<div class="marketing-tag tag">why choose us</div>
+					<div class="marketing-title title">We help great brands scale with content marketing.</div>
+					<p class="services-text text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.</p>
+					<span class="marketing-promt">This is some text inside of a div.</span>
+					<span class="marketing-promt">This is some text inside of a div.</span>
+					<span class="marketing-promt">This is some text inside of a div.</span>
+					<span class="marketing-promt">This is some text inside of a div.</span>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="stat-conteiner">
+			<div class="content-wrap d-flex">
+				<div class="stat-content d-flex">
+					<div class="stat-item">
+						<div class="stat-title title">1.2M+</div>
+						<p class="stat-text text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim.</p>
+					</div>
+					<div class="stat-item">
+						<div class="stat-title title">3.4B</div>
+						<p class="stat-text text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim.</p>
+					</div>
+					<div class="stat-item">
+						<div class="stat-title title">98%</div>
+						<p class="stat-text text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim.</p>
+					</div>
+					<div class="stat-item">
+						<div class="stat-title title">10+</div>
+						<p class="stat-text text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim.</p>
+					</div>
+				</div>
+				
+				<div class="stat-photo img">
+					<img src="images/photo/photo-3.png">
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="reviews-container">
+			<div class="content-wrap">
+				<div class="tag">testimonials</div>
+				<div class="reviews-title title">See what our clients say</div>
+				<p class="reviews-content text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.</p>
+				<div class="button-reviews">
+				<a href="#" class="reviews-btn btn-blue">Get in touch</a>
+				</div>
+
+				
+		<div class="swiper">
+  			<div class="swiper-wrapper">
+    			<div class="swiper-slide">
+    				<div class="reviews-item">
+						<div class="reviews-author d-flex">
+							<div class="reviews-photo img"><img src="images/reviews-photo/rew-1.png" alt=""></div>
+							<div class="reviews-info">
+							<span class="reviews-name">John Doe</span>
+							<span class="reviews-company">Company Name</span>
+							</div>
+						</div>
+						<div class="reviews-item-title">"I recommend this agency"</div>
+						<p class="reviews-text services-icon-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.</p>
+						<div class="rating">
+							<div class="star-rating"></div>
+							<div class="star-rating"></div>
+							<div class="star-rating"></div>
+							<div class="star-rating"></div>
+							<div class="star-rating"></div>
+						</div>
+					</div>
+    			</div>
+
+    			<div class="swiper-slide">
+    				<div class="reviews-item">
+						<div class="reviews-author d-flex">
+							<div class="reviews-photo img"><img src="images/reviews-photo/rew-2.png" alt=""></div>
+							<div class="reviews-info">
+							<span class="reviews-name">Alice Smith</span>
+							<span class="reviews-company">Company Name</span>
+							</div>
+						</div>
+						<div class="reviews-item-title">"The support is awesome"</div>
+						<p class="reviews-text services-icon-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.</p>
+						<div class="rating">
+							<div class="star-rating"></div>
+							<div class="star-rating"></div>
+							<div class="star-rating"></div>
+							<div class="star-rating"></div>
+							<div class="star-rating"></div>
+						</div>
+					</div>
+    			</div>
+
+   				<div class="swiper-slide">
+   					<div class="reviews-item">
+						<div class="reviews-author d-flex">
+							<div class="reviews-photo img"><img src="images/reviews-photo/rew-3.png" alt=""></div>
+							<div class="reviews-info">
+							<span class="reviews-name">Sophia Miller</span>
+							<span class="reviews-company">Company Name</span>
+							</div>
+						</div>
+						<div class="reviews-item-title">“A game changer for us”</div>
+						<p class="reviews-text services-icon-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.</p>
+						<div class="rating">
+							<div class="star-rating"></div>
+							<div class="star-rating"></div>
+							<div class="star-rating"></div>
+							<div class="star-rating"></div>
+							<div class="star-rating"></div>
+						</div>
+					</div> 
+   				</div>
+
+     			<div class="swiper-slide">
+     				<div class="reviews-item">
+						<div class="reviews-author d-flex">
+							<div class="reviews-photo img"><img src="images/reviews-photo/rew-2.png" alt=""></div>
+							<div class="reviews-info">
+							<span class="reviews-name">Alice Smith</span>
+							<span class="reviews-company">Company Name</span>
+							</div>
+						</div>
+						<div class="reviews-item-title">"The support is awesome"</div>
+						<p class="reviews-text services-icon-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.</p>
+						<div class="rating">
+							<div class="star-rating"></div>
+							<div class="star-rating"></div>
+							<div class="star-rating"></div>
+							<div class="star-rating"></div>
+							<div class="star-rating"></div>
+						</div>
+					</div>
+     			</div>
+    	
+ 			</div>
+  			 <div class="swiper-pagination"></div>
+  			 <div class="swiper-button-prev"></div>
+ 			 <div class="swiper-button-next"></div>
+			</div>
+		</div>
+					
+			</div>
+		</div>
+
+
+
+
+		<div class="news-container">
+			<div class="content-wrap">
+				<div class="tag">Blog</div>
+				<div class="news-title title">Read our
+				articles & news</div>
+				<p class="news-content text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.</p>
+				<div class="button-news">
+				<a href="#" class="news-btn btn-blue">All Posts</a>
+				</div>
+
+				<div class="news-blocks d-flex">
+					<div class="news-item">
+						<div class="news-picture">
+							<div class="news-photo img"><img src="images/news-photo/news-1.png" alt=""></div>
+							<div class="news-teg"><a href="#">
+							Social Media</a>
+							</div>
+						</div>
+						<div class="news-info">
+						<span class="news-date">August 28, 2022</span>
+						<div class="news-item-title">How to Use Social Proof in Marketing</div>
+						<p class="news-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.</p>
+						<a href="">Read now</a>
+					</div>
+
+				</div>
+				<div class="news-item">
+						<div class="news-picture">
+							<div class="news-photo img"><img src="images/news-photo/news-2.png" alt=""></div>
+							<div class="news-teg"><a href="#">
+							SEO</a>
+							</div>
+						</div>
+						<div class="news-info">
+						<span class="news-date">August 28, 2022</span>
+						<div class="news-item-title">Make a great first impression with these titles</div>
+						<p class="news-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.</p>
+						<a href="">Read now</a>
+					</div>
+				</div>
+				<div class="news-item">
+						<div class="news-picture">
+							<div class="news-photo img"><img src="images/news-photo/news-3.png" alt=""></div>
+							<div class="news-teg"><a href="#">
+							Strategy</a>
+							</div>
+						</div>
+						<div class="news-info">
+						<span class="news-date">August 28, 2022</span>
+						<div class="news-item-title">How to Grab Your Reader’s Attention</div>
+						<p class="news-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.</p>
+						<a href="">Read now</a>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="feedback">
+			<div class="content-wrap d-flex">
+				<div class="feedback-content">
+					<div class="feedback-title">Ready to start scaling your business now?</div>
+					<p class="feedback-text">Lorem ipsum dolor sit am consectetur adipiscing varius enim in eros.</p>
+				</div>
+				<div class="feedback-buttons d-flex">
+					<a href="#" class="feedback-btn btn-blue">Our services</a>
+					<a href="#" class="btn-grey">Contact us</a> 
+				</div>
+			</div>
+		</div>
+
+
+		<footer>
+			<div class="content-wrap d-flex">
+				<div class="footer-lincs">
+					<div class="footer-logo-img">
+						<a href="#"><img src="images/logo.svg"></a>
+						<p class="footer-desc">Growfy is a template highly suitable for modern marketing agencies, digital studios, startups and businesses. The design is made in the dark style, which makes the site memorable and you can easily adapt it to your brand.</p> 
+						<div class="social-icon d-flex">
+						   <a class="icon" href="#"><img src="images/social-icon/in.svg" alt=""></a>	
+							<a class="icon" href="#"><img src="images/social-icon/tw.svg" alt=""></a>
+							<a class="icon" href="#"><img src="images/social-icon/face.svg" alt=""></a>
+							<a class="icon" href="#"><img src="images/social-icon/you.svg" alt=""></a>
+							<a class="icon" href="#"><img src="images/social-icon/insta.svg" alt="">	</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="pages">
+					<div class="info-title">Pages</div>
+					<a class="info-link" href="#">Home</a>	
+					<a class="info-link" href="#">About</a>
+					<a class="info-link" href="#">Services</a>
+					<a class="info-link" href="#">Packages</a>
+					<a class="info-link" href="#">Blog</a>
+					<a class="info-link" href="#">Contact</a>
+				</div>
+				<div class="utility_pages">
+					<div class="info-title">Utility pages</div>
+					<a class="info-link" href="#">Instructions</a>	
+					<a class="info-link" href="#">Style guide</a>
+					<a class="info-link" href="#">Licenses</a>
+					<a class="info-link" href="#">Changelog</a>
+					<a class="info-link" href="error.html">404 Not found</a>
+					<a class="info-link" href="#">Password protected</a>	
+				</div>
+				<div class="subscribe">
+					<div class="info-title">Subscribe to our newsletter</div>
+					<p class="subscribe-desc">Lorem ipsum dolor sit am consectetur adipiscing</p>
+					<div class="footer-buttons d-flex">
+						<a class="subscribe-btn-black" href="#">Enter your email</a>
+						<a class="subscribe-btn-blue btn-blue" href="#">Subscribe</a>
+					</div> 
+				</div>
+			</div>
+		</footer>
+		<div class="date">© 2022</div>
+		
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script type="text/javascript" src="scripts/script.js"></script>
+	</body>
+</html>

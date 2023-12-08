@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Metal+Mania&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@100&display=swap');
+@import url('_template.css');
+@import url('_variables.css');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+}
+body {
+	font-family: Poppins;
+	background-color: #0d0d11;
+	width: 100%;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: var(--btn-blue);
+  color: white;
+  cursor: pointer;
+  border-radius: 50px;
+  padding-right: 2px;
+}
+
+#myBtn:hover {
+  background-color: #3076c1;
+}
+
+
+.content-wrap {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.btn-blue {
+	display: inline-flex;
+	height: 44px;
+	padding: 0 20px;
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 2px;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	border-radius: 50px;
+	background-color: var(--btn-blue);
+	line-height: 110%;
+
+}
+
+.btn-grey {
+	display: inline-flex;
+	height: 44px;
+	padding: 0 20px;
+	font-size: 0.75rem;
+	font-weight: 500;
+	color: white;
+	letter-spacing: 2px;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	border-radius: 50px;
+	background: rgba(129, 129, 139, 0.20);
+	background-color: #81818B33;
+	line-height: 110%;
+}
+.btn-blue:hover {
+	background-color: #3076c1;
+}
+.btn-grey:hover {
+	background: rgba(129, 129, 139, 0.10);
+}
+
+
+.title {
+	color: white;
+	font-size: 2rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 120%; 
+}
+.text-content {
+	font-size: 1.125rem;
+	color: var(--f-color-grey);
+	font-weight: 300;
+	line-height: 150%;
+}
+.services-icon-title {
+	font-size: 1.2rem;
+	color: white;
+	font-weight: 400;
+}
+.services-icon-text,
+.news-text,
+.feedback-text,
+.footer-desc,
+.info-link,
+.subscribe-desc {
+	font-size: 1rem;
+	font-weight: 300;
+	color: var(--f-color-dark-grey);
+	line-height: 150%;
+}
+
+.tag {
+	display: inline-flex;
+	font-size: 0.675rem;
+	color: var(--f-color-grey);
+	font-weight: 300;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding: 10px 18px;
+	border-radius: 12px;
+	border: 1px solid rgba(129, 129, 139, 0.20);
+}
+
+
+
+/*----------MediaQueries--------*/
+
+
+
+
+@media (min-width:480px) {
+.services-container, .stat-content {
+	flex-direction: row;
+}
+.stat-content {
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.services-container-left.icon-container,
+.services-container-right.icon-container, 
+.stat-item {
+	width: calc(50% - 16px);
+	max-width: 314px;
+}
+.reviews-blocks, .news-blocks {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.news-item {
+	width: calc(50% - 16px);
+	max-width: 394px;
+}
+.feedback-buttons {
+	margin-left: 30px;
+}
+}
+  
+
+
+
+@media (min-width:768px) {
+	.nav {
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+	.nav-bar {
+		width: auto;
+	}
+	ul li:not(:last-child) {
+	margin-right: 20px;
+}
+
+.cart {
+	position: static;
+}
+.main-menu {
+	display: flex;
+	position: static;
+	overflow: visible;
+	width: auto;
+	height: inherit;
+	background-color: transparent;
+	transition: none;
+}
+.btn-blue, .btn-grey {
+	width: 160px;
+	height: 52px;
+	font-size: 0.875rem;
+}
+
+.btn__transparent {
+	margin-left: 15px;
+}
+.burger-icons {
+	display: none;
+}
+
+.desktop {
+	display: block;
+}
+
+
+
+
+.title {
+	font-size: 2.5rem;
+}
+.header-photo img {
+	max-width: 624px;
+	padding-left: 54px;
+	padding-right: 26px;
+}
+.header-content {
+	flex-direction: unset;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.header-content-text {
+	width: 50%;
+	max-width: 624px;
+	padding-top: 40px;
+	padding-right: 60px;
+}
+.partners-text {
+	margin-top: 92px;
+}
+.logo-partners {
+	gap: 30px;
+	margin-bottom: 160px;
+}
+.logo-partners img {
+	width: 210px;
+}
+.buttons {
+	gap: 32px;
+}
+.services-descr {
+	margin-right: 20px;
+}
+.services-section .content-wrap {
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.services-container {
+	margin-bottom: 52px;
+	flex-wrap: wrap;
+
+}
+.icon-container {
+	padding: 55px 25px 60px;
+}
+.services-container-left {
+	margin-top: 48px;
+}
+
+
+
+.marketing-photo {
+	margin-right: 62px;
+}
+.marketing-tag {
+	margin-top: 20px;
+}
+.marketing-descr span {
+	font-size: 1rem;
+}
+.marketing-info .content-wrap {
+	flex-wrap: nowrap;
+}
+.reviews-item-title,
+.feedback-title {
+	font-size: 2rem;
+}
+.reviews-item, .news-item {
+	padding: 64px 40px;
+}
+.feedback .content-wrap {
+	flex-wrap: nowrap;
+}
+.feedback-btn {
+	margin-right: 32px;
+}
+
+.info-link {
+	margin-top: 24px;
+}
+footer .content-wrap {
+	justify-content: space-between;
+}
+}
+
+
+
+@media (min-width:830px) {
+	ul li:not(:last-child) {
+	margin-right: 36px;
+	}
+	.btn__transparent {
+		margin-left: 32px;
+	}
+	.title {
+	font-size: 3.2rem;
+	}
+	
+	.logo-partners:before {
+	content: "";
+	width: 170px;
+	height: 80px;
+	background: linear-gradient(90deg, #0D0D11 8%, rgba(0, 0, 0, 0.00) 100%);
+	position: absolute;
+	left: 0;
+}
+	.logo-partners:after {
+	content: "";
+	width: 170px;
+	height: 80px;
+	background: linear-gradient(270deg, #0D0D11 8%, rgba(0, 0, 0, 0.00) 100%);
+	position: absolute;
+	right: 0;
+}
+
+}
+
+
+
+
+@media (min-width:960px) {
+	.header-content-text {
+	padding-top: 90px;
+	padding-right: 118px;
+	}
+	.services-container, .marketing-info,
+	.stat-conteiner, .reviews-container, 
+	.news-container {
+	margin-bottom: 192px;
+}
+	.stat-conteiner .content-wrap {
+	flex-wrap: nowrap;
+}
+	.stat-content {
+		justify-content: start;
+}
+	.icon-container {
+	max-width: 314px;
+}
+	.button-reviews {
+	top: 170px;
+}
+
+/*	.reviews-blocks, */
+	.news-blocks {
+	gap: 48px;
+}
+
+
+	.button-news {
+		top: 200px;
+	}
+	.feedback .content-wrap {
+	justify-content: space-between;
+	padding: 52px 70px;
+}
+}
+
+@media (min-width:1170px) {
+
+.stat-photo img {
+	margin-top: 0;
+}
+.stat-conteiner .content-wrap,
+.services-section .content-wrap {
+	justify-content: space-between;
+}
+.stat-content {
+	max-width: 750px;
+	justify-content: start;
+}
+
+.services-descr {
+	margin-right: 104px;
+}
+.marketing-tag {
+	margin-top: 90px;
+}
+.feedback .content-wrap {
+	padding: 52px 140px;
+	margin-bottom: 254px;
+}
+
+}

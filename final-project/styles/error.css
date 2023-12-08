@@ -1,0 +1,32 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	display: inline-flex;
+	width: 400px;
+	margin: 0 auto;
+}
+.page_404 {
+	max-width: 1280px;
+	display: flex;
+	flex-direction: column;
+}
+h1, .title {
+	display: inline-flex;
+	justify-content: center;
+}
+h1 {
+	font-size: 3rem;
+}
+.title {
+	font-size: 2rem;
+}
+/*.text_404 {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}*/
